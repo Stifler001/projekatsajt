@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+.nav{
+    overflow: hidden;
+    background: blue;
+    margin-bottom: 20px;
+}
+.nav a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    color:black;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px dotted black;
+    
+}
+
+.nav a:hover{
+background: white;
+color: black;
+transition: 0.5s;
+}
+.nav a:active{
+    background: lightblue;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tekst{
+    font-family: novifont ;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+@font-face {
+    font-family: novifont;
+    src: url("../font/BebasNeue-Regular.ttf");
+}
+.slika{
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.cena{
+    text-align: center; 
+    margin-bottom: 30px;
+}
+.cena .cena1{
+    font-size: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width:500px) {
+    .nav a{
+    float: none;
+    width: 100%;
+    background-color: darkblue;     
+    }
+}
+.zaposleni{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    text-align: center;
+}
+.vlasnik{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.zaposleni1{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.zaposleni2{
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+form{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+legend{
+    text-align: center;
+}
+.posalji{
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 15vh auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 15px silver;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+input{
+    width: 100%;
+    margin: 5px 10px;
+    height: 35px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    background-color: springgreen;
+}
+textarea{
+    width: 100%;
+    margin: 5px 0;
+    font: 17px;
+    text-align: center;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    background-color: wheat;
+}
+input[type="submit"]:hover{
+    background-color: rgb(95, 233, 219);
+    color:darkblue;
+    cursor: pointer;
+   
+}
+.select1{
+    width: 50%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border:none;
+}
+@media screen and (max-width:600px){
+    .container{
+        width: 90%;
+    }
+}
+.celatabla{
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 70%;
+    height: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-shadow: 5px 5px 10px silver;
+    background-color: rgb(115, 235, 115) ;
+    margin-bottom: 30px;
+}
+.celatabla tr{
+    width: 65%;
+    height: 50px;
+}
+
+.celatabla td{
+    width: 45%;
+}
+.anime{
+    text-align: center;
+}
+.anime img{
+    width: 100px;
+    height: 100px;
+    animation: animacija 4s linear infinite;
+}
+@keyframes animacija{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.anime p{
+    margin-top: 20px;
+}
