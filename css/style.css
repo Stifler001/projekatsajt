@@ -62,7 +62,7 @@ h1{
     font-size: 16px;
     font-weight: bold;
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:300px) {
     .nav a{
     float: none;
     width: 100%;
@@ -150,10 +150,15 @@ input[type="submit"]:hover{
     border-radius: 15px;
     border:none;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .container{
         width: 90%;
     }
+    .nav a{
+    display: block;
+    float: none;
+    }
+    
 }
 .celatabla{
     text-align: center;
